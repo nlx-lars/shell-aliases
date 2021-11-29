@@ -48,4 +48,4 @@ alias syslog-web="vagrant ssh web -c 'tail -f /var/log/syslog'"
 function _vagrantFlow() {
     vagrant ssh web -c "cd /var/www/\$(hostname | tail -c +5)/releases/current ; sudo -u www-data -H ./flow $*" -- -q
 }
-alias flow="_vagrantFlow"
+alias pflow="_vagrantFlow"
